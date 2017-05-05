@@ -1,17 +1,18 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { DetailPage } from '../detail/detail';
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
-  item: any[];
+  items: any[];
 
   constructor(public navCtrl: NavController) {
-    this.item = [];
+    this.items = [];
     for(let i=0; i<10; i++) {
-      this.item.push({
+      this.items.push({
         text: 'Item ' + i,
         id: i
       })
@@ -19,7 +20,9 @@ export class HomePage {
   }
 
   itemSelected(item) {
-    alert(item.text)
+    this.navCtrl.push(DetailPage, {
+      item: item
+    })
   }
 
 }
