@@ -1,4 +1,6 @@
-# mobile
+# Mobile Applications
+<hr>
+
 <h1>Chat App</h1>
 <hr>
 <p>Install the followings before you run the chat app</p>
@@ -6,7 +8,6 @@
   <ol>npm install express</ol>
   <ol>npm install socket.io</ol>
 </ul>
-
 <p>
   node app.js
 </p>
