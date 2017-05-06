@@ -1,7 +1,7 @@
 # Mobile Applications
 <hr>
 
-<h1>Chat App</h1>
+<h2>Chat App</h2>
 <hr>
 <p>Install the followings before you run the chat app</p>
 <ul>
@@ -12,7 +12,7 @@
   node app.js
 </p>
 
-<h1>Online Dealer Demo</h1>
+<h2>Online Dealer Demo</h2>
 <hr>
 <table>
   <tr>
