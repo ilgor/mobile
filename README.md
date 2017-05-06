@@ -1,5 +1,18 @@
 # mobile
+<h1>Chat App</h1>
+<hr>
+<p>Install the followings before you run the chat app</p>
+<ul>
+  <ol>npm install express</ol>
+  <ol>npm install socket.io</ol>
+</ul>
 
+<p>
+  node app.js
+</p>
+
+<h1>Online Dealer Demo</h1>
+<hr>
 <table>
   <tr>
     <td>sudo npm install -g cordova ionic</td>   
