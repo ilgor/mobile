@@ -3,6 +3,10 @@
 
 <h2>Chat App</h2>
 <hr>
+<p>
+  npm install socket.io-client --save <br>
+  typings install dt~socket.io-client --save --global
+</p>
 <p>Install the followings before you run the chat app</p>
 <ul>
   <ol>npm install express</ol>
