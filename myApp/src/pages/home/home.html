@@ -1,13 +1,23 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>
+      <img src="/assets/images/audi_logo.png" alt="" height="40%" width="40%">
+    </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
   <ion-list>
-    <button ion-item *ngFor="let item of items" (click)="itemSelected(item)">
-      {{ item.text }}
+    <button ion-item *ngFor="let car of cars" (click)="detailForSelected(car)">
+      <div class="row">
+        <span text-left class="col col-50">{{ car.model }}</span>
+        <span text-right class="col col-50">{{ car.price | currency:'USD':true:'1.0-2' }}</span>
+      </div>
+
+      <div class="row">
+        <p>{{ car.description }}</p>
+      </div>
+      <img src="{{ car.image }}">
     </button>
   </ion-list>
 </ion-content>

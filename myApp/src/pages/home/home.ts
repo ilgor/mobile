@@ -7,21 +7,46 @@ import { DetailPage } from '../detail/detail';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  items: any[];
+  cars: any []
 
   constructor(public navCtrl: NavController) {
-    this.items = [];
-    for(let i=0; i<10; i++) {
-      this.items.push({
-        text: 'Car ' + i,
-        id: i
-      })
-    }
+    this.cars = [
+      {
+        model: 'A4',
+        description: 'e-tron',
+        price: 34000,
+        image: '/assets/images/A4.jpg'
+      },
+      {
+        model: 'A5',
+        price: 54000,
+        description: '2.0 TFSI',
+        image: '/assets/images/A5.jpg'
+      },
+      {
+        model: 'R8',
+        price: 154000,
+        description: 'V10 Plus',
+        image: '/assets/images/R8.jpg'
+      },
+      {
+        model: 'Q5',
+        price: 44000,
+        description: '2.0 TFSI',
+        image: '/assets/images/Q5.jpg'
+      },
+      {
+        model: 'Q7',
+        price: 56000,
+        description: '3.0 TFSI',
+        image: '/assets/images/Q7.jpg'
+      }
+    ];
   }
 
-  itemSelected(item) {
+  detailForSelected(car) {
     this.navCtrl.push(DetailPage, {
-      item: item
+      car: car
     })
   }
 

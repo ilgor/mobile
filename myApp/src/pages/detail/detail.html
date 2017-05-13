@@ -7,15 +7,17 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>{{ item.text }}</ion-title>
+    <ion-title>{{ car.model }}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <h2>{{ item.id }} details</h2>
-  <p>
-    Great car, buy it now!
-  </p>
+  <img src="{{ car.image }}">
+  <div class="row" *ngFor="let option of options">
+    <span text-left class="col col-50">{{ car.model }}-{{ option.name }}</span>
+    <span text-right class="col col-50">{{ (car.price + (car.price * option.yeild / 100)) / 60 | currency:'USD':true:'1.0-2' }} / month</span>
+  </div>
+
 </ion-content>

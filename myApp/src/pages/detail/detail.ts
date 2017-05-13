@@ -13,10 +13,25 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'detail.html',
 })
 export class DetailPage {
-  item: any;
+  car: any;
+  options: any [];
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-    this.item = navParams.get('item');
+    this.car = navParams.get('car');
+    this.options = [
+      {
+        name: 'Base',
+        yeild: 0
+      },
+      {
+        name: 'Premium',
+        yeild: 10
+      },
+      {
+        name: 'Premuim Plus',
+        yeild: 15
+      }
+    ];
   }
 
   ionViewDidLoad() {
