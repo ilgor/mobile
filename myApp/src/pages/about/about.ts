@@ -21,8 +21,8 @@ export class AboutPage {
   currentDealer = "";
 
   icon = {
-    url: "assets/images/vw.png", // url
-    scaledSize: new google.maps.Size(50, 50), // scaled size
+    url: "assets/images/audi.png", // url
+    scaledSize: new google.maps.Size(70, 50), // scaled size
     origin: new google.maps.Point(0,0), // origin
     anchor: new google.maps.Point(0, 0) // anchor
   };
@@ -43,7 +43,7 @@ export class AboutPage {
     let mapOptions = {
       center: latLng,
       disableDefaultUI: true,
-      zoom: 11,
+      zoom: 10,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     this.map = new google.maps.Map(this.mapContainer.nativeElement, mapOptions);
