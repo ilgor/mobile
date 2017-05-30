@@ -13,6 +13,7 @@ import { Geolocation } from '@ionic-native/geolocation';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { DetailPage } from '../pages/detail/detail';
+import { HttpModule } from '@angular/http';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { DetailPage } from '../pages/detail/detail';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],

@@ -1,0 +1,47 @@
+[
+  {
+    "latitude": 42.31793945,
+    "longitude": -88.06091309,
+    "name": "Libertyville Volkswagen"
+  },
+  {
+    "latitude": 42.3831781,
+    "longitude": -87.9579498,
+    "name": "Gurnee Volkswagen"
+  },
+  {
+    "latitude": 42.325578,
+    "longitude": -87.8411818,
+    "name": "North Chicago Volkswagen"
+  },
+  {
+    "latitude": 42.2393323,
+    "longitude": -87.9653565,
+    "name": "Vernon Hills Volkswagen"
+  },
+  {
+    "latitude": 42.2586342,
+    "longitude": -87.840625,
+    "name": "Lake Forest Volkswagen"
+  },
+  {
+    "latitude": 42.3716881,
+    "longitude": -88.0900815,
+    "name": "Lake Beach Volkswagen"
+  },
+  {
+    "latitude": 42.1969689,
+    "longitude": -88.0934108,
+    "name": "Lake Zurich Volkswagen"
+  },
+  {
+    "latitude": 42.1662831,
+    "longitude": -87.9631308,
+    "name": "Buffalo Grove Volkswagen"
+  },
+  {
+    "latitude": 42.3261332,
+    "longitude": -88.167861,
+    "name": "Volo Grove Volkswagen"
+  }
+]
