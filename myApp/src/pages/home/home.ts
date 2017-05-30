@@ -7,7 +7,7 @@ import { DetailPage } from '../detail/detail';
   templateUrl: 'home.html'
 })
 export class HomePage {
-  cars: any []
+  cars: any [];
 
   constructor(public navCtrl: NavController) {
     this.cars = [

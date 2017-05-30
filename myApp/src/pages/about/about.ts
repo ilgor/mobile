@@ -4,6 +4,8 @@ import { NavController, Platform} from 'ionic-angular';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { DealerDetailPage } from "../dealer-detail/dealer-detail";
+import {timeout} from "rxjs/operator/timeout";
+import {HomePage} from "../home/home";
 
 declare var google;
 
@@ -16,6 +18,7 @@ export class AboutPage {
   @ViewChild('mapContainer') mapContainer: ElementRef;
   map: any;
   infoWindows: any;
+  currentDealer = "";
 
   icon = {
     url: "assets/images/vw.png", // url
@@ -69,13 +72,19 @@ export class AboutPage {
   }
 
   addInfoWindowToMarker(marker) {
-    var infoWindowContent = '<div>'+ marker.title +'</div>';  // '<div id="content"><h1 id="firstHeading" class="firstHeading">' + marker.title + '</h1></div>';
+    var infoWindowContent = '<div id="myInfoWinDiv">'+ marker.title +'</div>';  // '<div id="content"><h1 id="firstHeading" class="firstHeading">' + marker.title + '</h1></div>';
     var infoWindow = new google.maps.InfoWindow({
       content: infoWindowContent
     });
     marker.addListener('click', () => {
+      this.toggleBounce(marker);
       this.closeAllInfoWindows();
       infoWindow.open(this.map, marker);
+    });
+
+    infoWindow.addListener('click', () => {
+      debugger;
+        this.navCtrl.push(HomePage);
     });
     this.infoWindows.push(infoWindow);
   }
@@ -86,9 +95,22 @@ export class AboutPage {
     }
   }
 
-  inventoryForSelected(dealer) {
-    this.navCtrl.push(DealerDetailPage, {
-      dealer: dealer
-    })
+  toggleBounce(marker) {
+    if (marker.getAnimation() !== null) {
+      marker.setAnimation(null);
+    } else {
+      marker.setAnimation(google.maps.Animation.BOUNCE);
+      setTimeout(function() {
+         marker.setAnimation(null)
+      }, 1450);
+    }
+
+    if (this.currentDealer == marker.title) {
+      this.navCtrl.push(HomePage);
+    }
+    else {
+      this.currentDealer = marker.title;
+    }
   }
 }
+
