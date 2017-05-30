@@ -3,6 +3,7 @@ import { Geolocation } from '@ionic-native/geolocation';
 import { NavController, Platform} from 'ionic-angular';
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
+import { DealerDetailPage } from "../dealer-detail/dealer-detail";
 
 declare var google;
 
@@ -27,7 +28,8 @@ export class AboutPage {
      this.infoWindows = [];
   }
 
-  ionViewWillEnter() {
+  // ionViewWillEnter() {
+  ionViewDidLoad() {
     this.displayGoogleMap();
     this.getMarkers();
   }
@@ -58,7 +60,8 @@ export class AboutPage {
       var dealers = new google.maps.Marker({
         position: position,
         title: marker.name,
-        icon: this.icon
+        icon: this.icon,
+        animation: google.maps.Animation.DROP
       });
       dealers.setMap(this.map);
       this.addInfoWindowToMarker(dealers);
@@ -66,7 +69,7 @@ export class AboutPage {
   }
 
   addInfoWindowToMarker(marker) {
-    var infoWindowContent = '<div id="content"><h1 id="firstHeading" class="firstHeading">' + marker.title + '</h1></div>';
+    var infoWindowContent = '<div>'+ marker.title +'</div>';  // '<div id="content"><h1 id="firstHeading" class="firstHeading">' + marker.title + '</h1></div>';
     var infoWindow = new google.maps.InfoWindow({
       content: infoWindowContent
     });
@@ -81,5 +84,11 @@ export class AboutPage {
     for(let window of this.infoWindows) {
       window.close();
     }
+  }
+
+  inventoryForSelected(dealer) {
+    this.navCtrl.push(DealerDetailPage, {
+      dealer: dealer
+    })
   }
 }
