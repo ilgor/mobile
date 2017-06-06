@@ -1,0 +1,161 @@
+[
+  {
+    "year": 2017,
+    "model": "A4",
+    "description": "e-tron",
+    "price": 34000,
+    "image": "/assets/images/A4-side.png"
+  },
+  {
+    "year": 2017,
+    "model": "A4",
+    "description": "e-tron",
+    "price": 34000,
+    "image": "/assets/images/A4-brown.jpg"
+  },
+  {
+    "year": 2017,
+    "model": "A4",
+    "description": "e-tron",
+    "price": 34000,
+    "image": "/assets/images/A4-navy.jpg"
+  },
+  {
+    "year": 2017,
+    "model": "A4",
+    "description": "e-tron",
+    "price": 34000,
+    "image": "/assets/images/A4-left.png"
+  },
+  {
+    "year": 2017,
+    "model": "A4",
+    "description": "e-tron",
+    "price": 34000,
+    "image": "/assets/images/A4-dark.png"
+  },
+  {
+    "year": 2017,
+    "model": "A4",
+    "description": "e-tron",
+    "price": 34000,
+    "image": "/assets/images/A4.jpg"
+  },
+  {
+    "year": 2017,
+    "model": "A4",
+    "description": "e-tron",
+    "price": 34000,
+    "image": "/assets/images/A4-red.jpg"
+  },
+  {
+    "year": 2017,
+    "model": "A5",
+    "price": 54000,
+    "description": "2.0 TFSI",
+    "image": "/assets/images/A5-red.jpg"
+  },
+  {
+    "year": 2017,
+    "model": "A5",
+    "price": 54000,
+    "description": "2.0 TFSI",
+    "image": "/assets/images/A5-blue.jpg"
+  },
+  {
+    "year": 2017,
+    "model": "A5",
+    "price": 54000,
+    "description": "2.0 TFSI",
+    "image": "/assets/images/A5.jpg"
+  },
+  {
+    "year": 2017,
+    "model": "A5",
+    "price": 54000,
+    "description": "2.0 TFSI",
+    "image": "/assets/images/A5-white.jpg"
+  },
+  {
+    "year": 2017,
+    "model": "R8",
+    "price": 154000,
+    "description": "V10 Plus",
+    "image": "/assets/images/R8-black.jpg"
+  },
+  {
+    "year": 2017,
+    "model": "R8",
+    "price": 154000,
+    "description": "V10 Plus",
+    "image": "/assets/images/R8-gray.jpg"
+  },
+  {
+    "year": 2017,
+    "model": "R8",
+    "price": 154000,
+    "description": "V10 Plus",
+    "image": "/assets/images/R8-white.jpg"
+  },
+  {
+    "year": 2017,
+    "model": "R8",
+    "price": 154000,
+    "description": "V10 Plus",
+    "image": "/assets/images/R8.jpg"
+  },
+  {
+    "year": 2017,
+    "model": "Q5",
+    "price": 44000,
+    "description": "2.0 TFSI",
+    "image": "/assets/images/Q5.jpg"
+  },
+  {
+    "year": 2017,
+    "model": "Q5",
+    "price": 44000,
+    "description": "2.0 TFSI",
+    "image": "/assets/images/Q5-red.jpg"
+  },{
+    "year": 2017,
+    "model": "Q5",
+    "price": 44000,
+    "description": "2.0 TFSI",
+    "image": "/assets/images/Q5-black.jpg"
+  },{
+    "year": 2017,
+    "model": "Q5",
+    "price": 44000,
+    "description": "2.0 TFSI",
+    "image": "/assets/images/Q5-gray.jpg"
+  },
+  {
+    "year": 2017,
+    "model": "Q7",
+    "price": 56000,
+    "description": "3.0 TFSI",
+    "image": "/assets/images/Q7-gray.jpg"
+  },
+  {
+    "year": 2017,
+    "model": "Q7",
+    "price": 56000,
+    "description": "3.0 TFSI",
+    "image": "/assets/images/Q7-white.png"
+  },
+  {
+    "year": 2017,
+    "model": "Q7",
+    "price": 56000,
+    "description": "3.0 TFSI",
+    "image": "/assets/images/Q7.jpg"
+  },
+  {
+    "year": 2017,
+    "model": "Q7",
+    "price": 56000,
+    "description": "3.0 TFSI",
+    "image": "/assets/images/Q7-black.jpg"
+  }
+]

@@ -1,0 +1,50 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Select a Car</ion-title>
+    <link rel="icon" type="image/x-icon" href="assets/icon/favicon.png">
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <!--<img id="selected_car" *ngIf="carSelected.length>0" src="{{ carSelected }}" item-center>-->
+  <!--<img id="default_audi" *ngIf="carSelected.length==0" src="../../assets/images/default.jpg">-->
+  <img id="default_audi" src="../../assets/images/default.jpg">
+
+  <ion-item>
+    <ion-label color="primary" floating>Year</ion-label>
+    <ion-select interface="popover" [(ngModel)]="selected_year">
+      <ion-option>2016</ion-option>
+      <ion-option>2017</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary" floating>Model</ion-label>
+    <ion-select interface="popover" [(ngModel)]="selected_model" (ngModelChange)="modelSelected(selected_model)">
+      <ion-option *ngFor="let model of models">{{ model }}</ion-option>
+    </ion-select>
+  </ion-item>
+
+   <ion-item>
+    <ion-label color="primary" floating>Price</ion-label>
+    <ion-select interface="popover" [(ngModel)]="seleced_price">
+      <ion-option>Under $30,000</ion-option>
+      <ion-option>Under $40,000</ion-option>
+      <ion-option>Under $50,000</ion-option>
+      <ion-option>Under $60,000</ion-option>
+      <ion-option>Under $70,000</ion-option>
+      <ion-option>Under $80,000</ion-option>
+      <ion-option>Over $80,000+</ion-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="primary" floating>Zip</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+
+  <button ion-button block (click)="getCarDetails(selected_model)" >Continue</button>
+
+</ion-content>

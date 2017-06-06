@@ -15,6 +15,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { DetailPage } from '../pages/detail/detail';
 import { HttpModule } from '@angular/http';
 import {DealerDetailPage} from "../pages/dealer-detail/dealer-detail";
+import {CarsPage} from "../pages/cars/cars";
+import {FAndIPage} from "../pages/f-and-i/f-and-i";
+import {DealerInfoPage} from "../pages/dealer-info/dealer-info";
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import {DealerDetailPage} from "../pages/dealer-detail/dealer-detail";
     HomePage,
     TabsPage,
     DetailPage,
-    DealerDetailPage
+    DealerDetailPage,
+    CarsPage,
+    FAndIPage,
+    DealerInfoPage
   ],
   imports: [
     BrowserModule,
@@ -39,7 +45,10 @@ import {DealerDetailPage} from "../pages/dealer-detail/dealer-detail";
     HomePage,
     TabsPage,
     DetailPage,
-    DealerDetailPage
+    DealerDetailPage,
+    CarsPage,
+    FAndIPage,
+    DealerInfoPage
   ],
   providers: [
     StatusBar,

@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {FAndIPage} from "../f-and-i/f-and-i";
 
-/**
- * Generated class for the Detail page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
 @IonicPage()
 @Component({
   selector: 'page-detail',
@@ -21,21 +16,30 @@ export class DetailPage {
     this.options = [
       {
         name: 'Base',
-        yeild: 0
+        yeild: 0,
+        selected: false
       },
       {
         name: 'Premium',
-        yeild: 10
+        yeild: 10,
+        selected: false
       },
       {
         name: 'Premuim Plus',
-        yeild: 15
+        yeild: 15,
+        selected: false
       }
     ];
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Detail');
+  }
+
+  chooseFAndI(carInfo) {
+    this.navCtrl.push(FAndIPage, {
+      car: carInfo
+    })
   }
 
 }

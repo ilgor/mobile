@@ -1,13 +1,7 @@
-<!--
-  Generated template for the Detail page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
-    <ion-title>{{ car.model }}</ion-title>
+    <ion-title>{{ car.model }} Options</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,8 +9,18 @@
 
 <ion-content padding>
   <img src="{{ car.image }}">
-  <div class="row" *ngFor="let option of options">
-    <span text-left class="col col-50">{{ car.model }}-{{ option.name }}</span>
-    <span text-right class="col col-50">{{ (car.price + (car.price * option.yeild / 100)) / 60 | currency:'USD':true:'1.0-2' }} / month</span>
-  </div>
+  <!--<div class="row" *ngFor="let option of options">-->
+    <!--<span text-left class="col col-50">{{ car.model }}-{{ option.name }}</span>-->
+    <!--<span text-right class="col col-50">{{ (car.price + (car.price * option.yeild / 100)) / 60 | currency:'USD':true:'1.0-2' }} / month</span>-->
+  <!--</div>-->
+
+  <ion-list>
+        <ion-item *ngFor="let option of options">
+            <ion-label> {{ car.model }}-{{ option.name }} </ion-label>
+            <ion-note item-right>{{ (car.price + (car.price * option.yeild / 100)) / 60 | currency:'USD':true:'1.0-2' }} / month</ion-note>
+            <ion-checkbox item-right checked="false" [(ngModel)]="option.selected"></ion-checkbox>
+        </ion-item>
+    </ion-list>
+
+  <button ion-button block (click)="chooseFAndI(car)">Choose F&I Product</button>
 </ion-content>

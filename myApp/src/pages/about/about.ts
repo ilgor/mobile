@@ -38,7 +38,7 @@ export class AboutPage {
   }
 
   displayGoogleMap() {
-    let latLng = new google.maps.LatLng(42.316693699999995, -87.93783239999999);
+    let latLng = new google.maps.LatLng(42.246819, -87.935944);
 
     let mapOptions = {
       center: latLng,
